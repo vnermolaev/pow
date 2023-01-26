@@ -5,12 +5,14 @@ itself from DoS attacks. This challenge is a simplistic PoW version demanding to
 such that the challenge together with the nonce hash out to a value satisfying some difficulty chosen by
 the server. Difficulty is a number of leading zeros in SHA256 hash.
 
-Run the server
+Run the client-server interaction
 ```bash
-cargo r --release --bin server
+docker-compose up
 ```
 
-run the client
+The server will start and keep running until explicitly terminated. The client will make a single request and
+terminate. To make another request, run in another terminal window
 ```bash
-cargo r --release --bin client
+docker start pow-client-1
 ```
+Observe the output in the terminal where containers have been built.

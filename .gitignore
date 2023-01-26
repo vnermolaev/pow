@@ -3,5 +3,3 @@
 target
 pow.iml
 Cargo.lock
-docker
-.dockerignore

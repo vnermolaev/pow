@@ -1,0 +1,9 @@
+.idea/
+docker/
+target/
+pow.iml
+Cargo.lock
+.dockerignore
+docker-compose.yml
+.git
+.gitignore
